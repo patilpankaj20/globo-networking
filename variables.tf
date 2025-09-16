@@ -28,4 +28,12 @@ variable "public_subnets" {
     public-2 = "10.42.11.0/24"
   }
 }
-
+variable "billing_code" {
+  type        = string
+  description = "(Required) Billing Code for network"
+}
+variable "environment" {
+  type        = string
+  description = "(Optional) Environemt for all resources"
+  default     = "development"
+}
